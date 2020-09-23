@@ -1,33 +1,13 @@
- #!/usr/bin/env ruby
-
-require('pry')
-
 class RPS 
-  def initialize(string)
-    @input = string
-    @rock = "rock"
-    @paper = "paper"
-    @scissors = "scissors"
+  def initialize(input)
+    @input = input
     @random = ["rock", "paper", "scissors"]
-    puts 'Enter rock, paper, or scissors:'
   end
 
   def input
     @input 
   end
   
-  def rock
-    @rock
-  end
-  
-  def paper
-    @paper
-  end
-  
-  def scissors
-    @scissors
-  end
-
   def input=(input)
     @input = input
   end
@@ -38,16 +18,16 @@ class RPS
 
   def get_random()
     cpu_move = @random.shuffle
-    puts "#{cpu_move[0]}"
+    puts "Computer chose #{cpu_move[0]}"
     return cpu_move[0]
   end
 
   def get_move()
-    puts player_input = @input
-    return player_input
+    puts "You chose #{@input}"
+    return @input
   end
   
-  def game_win(player, cpu)
+  def game_win()
     player = get_move()
     cpu = get_random()
       if (player === "rock" && cpu === "scissors")
@@ -76,4 +56,3 @@ end
 
 
 
-  
