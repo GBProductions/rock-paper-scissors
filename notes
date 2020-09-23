@@ -34,3 +34,19 @@ class Player < RPS
 
   
 end  
+
+@rock = "rock"
+@paper = "paper"
+@scissors = "scissors"
+
+ def rock
+    @rock
+  end
+  
+  def paper
+    @paper
+  end
+  
+  def scissors
+    @scissors
+  end

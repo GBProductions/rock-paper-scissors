@@ -26,6 +26,6 @@ end
 describe('#game_win') do
   it('determines winner of round') do
     new_game = RPS.new("rock")
-    expect(new_game.game_win("rock", "scissors")).to(eq("you win"))
+    expect(new_game.game_win()).to(eq("you win"))
   end
 end
