@@ -1,0 +1,11 @@
+# class Player < RPS
+#   def initialize(number)
+#     @number = number
+#   end
+# end
+
+# class CPU < RPS
+#   def initialize(number)
+#     @number = number
+#   end
+# end    
