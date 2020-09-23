@@ -9,3 +9,28 @@
 #     @number = number
 #   end
 # end    
+
+
+
+class CPU < RPS
+  def initialize()
+    @random = ["rock", "paper", "scissors"]
+  end
+
+  def random
+    @random
+  end
+
+  
+
+
+
+
+class Player < RPS
+  def initialize(string)
+    @input = string
+    
+  end
+
+  
+end  
